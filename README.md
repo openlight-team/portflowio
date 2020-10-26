@@ -12,7 +12,7 @@ Go in your database and create a table called "content"
 Reinstall Portflowio but keep the same table to save your data
 
 (for update to v1.03 from older versions) :
-change button-name to btnname in database structure
+change **button-name** to **btnname** in database structure
 ##
 ### You're done!
 Enjoy :)

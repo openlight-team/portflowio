@@ -13,4 +13,10 @@
     $database_table = "content"; // Portflowio table
 
     $database = new PDO('mysql:host=' . $database_host . ';dbname=' . $database_name . ';charset=utf8', $database_user, $database_password);
+
+    // Admin panel configuration
+    $admin_email = "admin@portflowio.ectw.fr"; // Your e-mail for login ("admin@portflowio.ectw.fr" as default)
+    $admin_password = "d033e22ae348aeb5660fc2140aec35850c4da997"; // sha1 hash for admin password (generate hash at http://www.sha1-online.com/) ("admin" is default)
+
+    // Theme specific settings
 ?>

@@ -20,7 +20,7 @@
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $selection['title']; ?></h5>
                         <p class="card-text"><?php echo $selection['description']; ?></p>
-                        <a href="<?php echo $selection['link']; ?>" class="btn btn-primary"><?php echo $selection['button-name']; ?></a>
+                        <a href="<?php echo $selection['link']; ?>" class="btn btn-primary"><?php echo $selection['btnname']; ?></a>
                     </div>
                 </div>
                 <br>

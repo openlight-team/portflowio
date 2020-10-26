@@ -1,4 +1,4 @@
-# portfowlio
+# portflowio
 An easier way to show your projects.
 ##
 ### How to make it work?

@@ -1,19 +1,9 @@
 # portflowio
 An easier way to show your projects.
-##
+***
+### How does it looks like
+It looks like this, in **default theme** :<br>
+![default theme](https://i.imgur.com/yO4Ftvo.png)
+***
 ### How to make it work?
-Go in config.php and replace everything by your own data
-##
-### How to add content?
-Go in your database and create a table called "content"
-**UPDATE : There's now a generator for this in admin panel**
-![Database organisation](https://i.imgur.com/cJ7FZMq.png)
-##
-### How to update?
-Reinstall Portflowio but keep the same table to save your data
-
-(for update to v1.03 from older versions) :
-change **button-name** to **btnname** in database structure
-##
-### You're done!
-Enjoy :)
+Follow these [easy steps](https://github.com/ecnivtwelve/portflowio/wiki/Installation) and see :)

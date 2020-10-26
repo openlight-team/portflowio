@@ -2,7 +2,7 @@
 An easier way to show your projects.
 ***
 ### How does it looks like ?
-It looks like this, in **default theme** :<br>
+It looks like this, in **default theme** :<br><br>
 ![default theme](https://i.imgur.com/Wvt767V.png)
 ***
 ### How to make it work?

@@ -6,6 +6,7 @@ Go in config.php and replace everything by your own data
 ##
 ### How to add content?
 Go in your database and create a table called "content"
+**UPDATE : There's now a generator for this in admin panel**
 ![Database organisation](https://i.imgur.com/cJ7FZMq.png)
 ##
 ### How to update?

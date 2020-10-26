@@ -5,7 +5,7 @@
     $website_theme = "default"; // Website's theme
     $website_icon = "icon.png"; // Favicon location
 
-    // Configuration de la base de données
+    // Configuration for database
     $database_host = "localhost"; // Database's host
     $database_name = "portflowio"; // Database's name
     $database_user = "root"; // User name for MySQL

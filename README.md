@@ -7,3 +7,6 @@ It looks like this, in **default theme** :<br>
 ***
 ### How to make it work?
 Follow these [easy steps](https://github.com/ecnivtwelve/portflowio/wiki/Installation) and see :)
+***
+### How to update
+Like [this](https://github.com/ecnivtwelve/portflowio/wiki/Update) ;)

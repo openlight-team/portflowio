@@ -1,11 +1,13 @@
 <?php
+
     session_start();
     include '../config.php';
 
-    if($_SESSION["loggedIn"] == true) {
+    if(sha1($_SESSION["loggedIn"]) == true) {
         $login = 1;
-        $database->exec('
+        $database->exec('SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
         START TRANSACTION;
+        SET time_zone = "+00:00";
         
         DROP TABLE IF EXISTS `content`;
         CREATE TABLE IF NOT EXISTS `content` (
@@ -15,11 +17,11 @@
         `link` varchar(255) NOT NULL,
         `btnname` varchar(255) NOT NULL,
         PRIMARY KEY (`id`)
-        ) AUTO_INCREMENT=0 DEFAULT CHARSET=utf8_general_ci;');
-        
+        ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;');
+
         header("Location: panel.php");
     }
     else {
         header("Location: login.php");
     }
-?>
+?> 

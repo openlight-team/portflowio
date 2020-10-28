@@ -2,7 +2,7 @@
     session_start();
     include '../config.php';
 
-    if(sha1($_SESSION["password"]) == $admin_password) {
+    if(sha1($_SESSION["loggedIn"]) == true) {
         $login = 1;
     }
     else {

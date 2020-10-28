@@ -3,7 +3,7 @@
     $website_name = "Portflowio Example"; // Website's name
     $website_description = "There's a nice website"; // Website's description
     $website_theme = "default"; // Website's theme
-    $website_icon = "icon.png"; // Favicon location
+    $website_icon = "assets/icon.png"; // Favicon location
 
     // Configuration for database
     $database_host = "localhost"; // Database's host

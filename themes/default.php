@@ -26,7 +26,7 @@
             <?php } ?>
             </div>
 
-            <p style="margin-top: 20px; margin-bottom: 20px; opacity:50%;">(C) 2020 portflowio</p>
+            <p style="margin-top: 20px; margin-bottom: 20px; opacity:50%;">Built with portflowio.</p>
         </div>
     </body>
 </html>

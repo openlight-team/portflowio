@@ -3,7 +3,7 @@
     include '../config.php';
 
     if(sha1($_SESSION["loggedIn"]) == true) {
-        $login = 1;
+        $loggedIn = true;
     }
     else {
         header("Location: login.php");

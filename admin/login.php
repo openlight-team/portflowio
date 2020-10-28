@@ -2,10 +2,10 @@
     session_start();
     include '../config.php';
 
-    if(isset($_POST['formconnexion'])) {
-        if($_POST['mailconnect'] == $admin_email) {
-            if(sha1($_POST['mdpconnect']) == $admin_password) {
-                $_SESSION["password"]=$_POST['mdpconnect'];
+    if(isset($_POST['submit'])) {
+        if($_POST['email'] == $admin_email) {
+            if(sha1($_POST['password']) == $admin_password) {
+                $_SESSION["loggedIn"] = true;
                 header("Location: panel.php");
             }
             else {
@@ -25,7 +25,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Portflowio Admin Panel</title>
         <link rel="icon" href="../<?php echo $website_icon; ?>" />
-        <meta name="description" content="Admin for Portflowio">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -59,27 +58,26 @@
     </head>
     <body>
 
-        <!-- Formunlaire de connexion -->
+        <!-- Login form -->
         <div id="login">
             <img src="logo.png" style="height:30px;margin-bottom:30px;">
             <form method="POST">
                 <div class="form-group">
-                    <label for="exampleInputEmail1">E-mail adress</label>
-                    <input name="mailconnect" type="email" class="form-control" aria-describedby="emailHelp">
+                    <label for="input-email">E-mail address</label>
+                    <input name="email" id="input-email" type="email" class="form-control" aria-describedby="emailHelp">
                     <small id="emailHelp" class="form-text text-muted">Don't worry, it's between you and me.</small>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input name="mdpconnect" type="password" class="form-control">
+                    <label for="input-password">Password</label>
+                    <input name="password" id="input-password" type="password" class="form-control">
                     <small id="mdpHelp" class="form-text text-muted">Hide your keyboard, someone's watching.</small>
                 </div>
                 <br>
-                <input name="formconnexion" type="submit" value="Login" class="btn btn-primary">
-                <small id="mdpHelp" class="form-text text-muted"><?php if(isset($error)){echo $error;} ?></small>
-                <small id="mdpHelp" class="form-text text-muted">No account ? Make it in config.php!</small>
+                <input name="submit" type="submit" value="Login" class="btn btn-primary">
+                <small id="mdpError" class="form-text text-muted"><?php if(isset($error)){echo $error;} ?></small>
+                <small class="form-text text-muted">No account ? Make it in config.php!</small>
             </form>
         </div>
-        <!-- Formunlaire de connexion -->
 
     </body>
 </html>

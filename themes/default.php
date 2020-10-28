@@ -18,7 +18,7 @@
             <?php while($selection = $select_content->fetch()) {?>
                 <div class="card" style="margin-top: 10px;">
                     <div class="card-body">
-                        <h5 class="card-title"><?php echo $selection['title']; ?></h5>
+                        <h2 class="card-title" style="font-size: 1.25rem;"><?php echo $selection['title']; ?></h2>
                         <p class="card-text"><?php echo $selection['description']; ?></p>
                         <a href="<?php echo $selection['link']; ?>" class="btn btn-primary"><?php echo $selection['btnname']; ?></a>
                     </div>

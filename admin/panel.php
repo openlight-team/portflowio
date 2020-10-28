@@ -30,7 +30,7 @@
             <p>Change your settings!</p>
             <br>
             <a href="add.php"><button type="button" class="btn btn-primary">Add a card to your portflowio</button><br><br></a>
-            <a href="make.php"><button type="button" class="btn btn-primary">Generate "content" table in your database (deletes older if already exists)</button></a>
+            <a href="make.php"><button type="button" class="btn btn-primary">Generate "content" table in your database (deletes older if already exists)</button></a><br><br>
             <a href="logout.php"><button type="button" class="btn btn-primary">Log out</button></a>
         </div>
     </body>

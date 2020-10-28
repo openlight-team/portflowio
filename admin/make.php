@@ -3,7 +3,7 @@
     session_start();
     include '../config.php';
 
-    if(sha1($_SESSION["loggedIn"]) == true) {
+    if($_SESSION["loggedIn"] == true) {
         $login = 1;
         $database->exec('SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
         START TRANSACTION;

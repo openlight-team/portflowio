@@ -4,6 +4,7 @@
     $website_description = "There's a nice website"; // Website's description
     $website_theme = "default"; // Website's theme
     $website_icon = "assets/icon.png"; // Favicon location
+    $website_color = "#0075ff"; // Main website color
 
     // Configuration for database
     $database_host = "localhost"; // Database's host

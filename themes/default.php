@@ -20,7 +20,7 @@
                     <div class="card-body">
                         <h2 class="card-title" style="font-size: 1.25rem;"><?php echo $selection['title']; ?></h2>
                         <p class="card-text"><?php echo $selection['description']; ?></p>
-                        <a href="<?php echo $selection['link']; ?>" class="btn btn-primary"><?php echo $selection['btnname']; ?></a>
+                        <a href="<?php echo $selection['link']; ?>" class="btn btn-<?php echo $default_bootstrap_color; ?>"><?php echo $selection['btnname']; ?></a>
                     </div>
                 </div>
             <?php } ?>

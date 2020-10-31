@@ -1,6 +1,4 @@
 <?php
-    $message = "You're sucessfully logged in! Welcome!";
-
     session_start();
     include '../config.php';
 
@@ -30,13 +28,15 @@
     </head>
     <body>
         <div id="page">
-            <div class="alert alert-success" role="alert">
-                <?php echo $message; ?>
-            </div>
+            <?php if(isset($message)) { ?>
+                <div class="alert alert-success" role="alert">
+                    <?php echo $message; ?>
+                </div>
+            <?php } ?>
             <br>
             <h2>Add a card to your website</h2>
             <p>Adding more content, ya know.</p>
-            <a href="panel.php">Go back</a>
+            <a href="manage.php">Go back</a>
             <br><br>
             <form method="POST" action="">
                 <input class="form-control" name="title" type="text" placeholder="Card title">

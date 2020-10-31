@@ -11,3 +11,8 @@ body {
 form input {
     margin-bottom: 10px;
 }
+
+.btnp {
+    width: 600px;
+    margin-bottom: 15px;
+}

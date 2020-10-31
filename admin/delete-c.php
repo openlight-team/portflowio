@@ -1,6 +1,7 @@
 <?php
     session_start();
     include '../config.php';
+    include '../lang/' . $website_language . '.php';
 
     if(sha1($_SESSION["loggedIn"]) == true) {
         $loggedIn = true;
@@ -22,11 +23,11 @@
     </head>
     <body>
         <div id="page">
-            <h2>Are you sure ?</h2>
-            <p>There is no way to go back.</p>
+            <h2><?php echo $lang_del_sure; ?></h2>
+            <p><?php echo $lang_del_text; ?></p>
             <br>
             <a href="delete.php?id=<?php echo $_GET['id']; ?>"><button type="button" class="btn btn-danger btnp">Detete permanently the card.</button><br></a>
-            <a href="manage.php"><button type="button" class="btn btn-primary btnp">Go back to Manage</button></a><br>
+            <a href="manage.php"><button type="button" class="btn btn-primary btnp"><?php echo $lang_del_back; ?></button></a><br>
         </div>
     </body>
 </html>

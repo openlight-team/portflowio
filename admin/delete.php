@@ -1,6 +1,7 @@
 <?php
     session_start();
     include '../config.php';
+    include '../lang/' . $website_language . '.php';
 
     if ($_SESSION["loggedIn"] == true) {
         $login = 1;

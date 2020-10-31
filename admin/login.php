@@ -1,6 +1,7 @@
 <?php
     session_start();
     include '../config.php';
+    include '../lang/' . $website_language . '.php';
 
     if(isset($_POST['submit'])) {
         if($_POST['email'] == $admin_email) {
@@ -9,11 +10,11 @@
                 header("Location: panel.php");
             }
             else {
-                $error = "Wrong password.";
+                $error = $lang_login_wrong1;
             }
         }
         else {
-            $error = "Unknown account.";
+            $error = $lang_login_wrong2;
         }
     }
 ?>
@@ -63,19 +64,19 @@
             <img src="logo.png" style="height:30px;margin-bottom:30px;">
             <form method="POST">
                 <div class="form-group">
-                    <label for="input-email">E-mail address</label>
+                    <label for="input-email"><?php echo $lang_login_form_mail; ?></label>
                     <input name="email" id="input-email" type="email" class="form-control" aria-describedby="emailHelp">
-                    <small id="emailHelp" class="form-text text-muted">Don't worry, it's between you and me.</small>
+                    <small id="emailHelp" class="form-text text-muted"><?php echo $lang_login_form_tip1; ?></small>
                 </div>
                 <div class="form-group">
-                    <label for="input-password">Password</label>
+                    <label for="input-password"><?php echo $lang_login_form_pass; ?></label>
                     <input name="password" id="input-password" type="password" class="form-control">
-                    <small id="mdpHelp" class="form-text text-muted">Hide your keyboard, someone's watching.</small>
+                    <small id="mdpHelp" class="form-text text-muted"><?php echo $lang_login_form_tip2; ?></small>
                 </div>
                 <br>
-                <input name="submit" type="submit" value="Login" class="btn btn-primary">
+                <input name="submit" type="submit" value="<?php echo $lang_login_form_validate; ?>" class="btn btn-primary">
                 <small id="mdpError" class="form-text text-muted"><?php if(isset($error)){echo $error;} ?></small>
-                <small class="form-text text-muted">No account ? Make it in config.php!</small>
+                <small class="form-text text-muted"><?php echo $lang_login_form_tip3; ?></small>
             </form>
         </div>
 

@@ -1,6 +1,7 @@
 <?php
     session_start();
     include '../config.php';
+    include '../lang/' . $website_language . '.php';
 
     if(sha1($_SESSION["loggedIn"]) == true) {
         $loggedIn = true;
@@ -21,11 +22,11 @@
     </head>
     <body>
         <div id="page">
-            <h2>Are you sure ?</h2>
-            <p>If the table already exists, all the content will be overwritten.</p>
+            <h2><?php echo $lang_del_sure; ?></h2>
+            <p><?php echo $lang_make_text; ?></p>
             <br>
-            <a href="make.php"><button type="button" class="btn btn-danger btnp">Go ahead.</button><br></a>
-            <a href="panel.php"><button type="button" class="btn btn-primary btnp">Go back to Panel</button></a><br>
+            <a href="make.php"><button type="button" class="btn btn-danger btnp"><?php echo $lang_make_btn; ?></button><br></a>
+            <a href="panel.php"><button type="button" class="btn btn-primary btnp"><?php echo $lang_del_back; ?></button></a><br>
         </div>
     </body>
 </html>

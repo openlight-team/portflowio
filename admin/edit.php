@@ -1,6 +1,7 @@
 <?php
     session_start();
     include '../config.php';
+    include '../lang/' . $website_language . '.php';
 
     if ($_SESSION["loggedIn"] == true) {
         $login = 1;
@@ -51,16 +52,16 @@
             </div>
             <?php } ?>
             <br>
-            <h2>Edit the "<?php echo $title; ?>" card.</h2>
+            <h2><?php echo $lang_edit_title1; ?><?php echo $title; ?><?php echo $lang_edit_title2; ?></h2>
             <p>Adding more content, ya know.</p>
-            <a href="manage.php">Go back</a>
+            <a href="manage.php"><?php echo $lang_global_back; ?></a>
             <br><br>
             <form method="POST" action="">
-                <input class="form-control" name="title" type="text" value="<?php echo $title; ?>" placeholder="Card title">
-                <input class="form-control" name="description" type="text" value="<?php echo $description; ?>" placeholder="Card description">
-                <input class="form-control" name="link" type="text" value="<?php echo $link; ?>" placeholder="Card link (don't forget http://)">
-                <input class="form-control" name="btnname" type="text" value="<?php echo $btnname; ?>" placeholder="Button name">
-                <input name="validate" type="submit" value="Edit" class="btn btn-primary">
+                <input class="form-control" name="title" type="text" value="<?php echo $title; ?>" placeholder="<?php echo $lang_add_input_title; ?>">
+                <input class="form-control" name="description" type="text" value="<?php echo $description; ?>" placeholder="<?php echo $lang_add_input_description; ?>">
+                <input class="form-control" name="link" type="text" value="<?php echo $link; ?>" placeholder="<?php echo $lang_add_input_link; ?>">
+                <input class="form-control" name="btnname" type="text" value="<?php echo $btnname; ?>" placeholder="<?php echo $lang_add_input_btnname; ?>">
+                <input name="validate" type="submit" value="<?php echo $lang_add_input_edit; ?>" class="btn btn-primary">
             </form>
         </div>
     </body>

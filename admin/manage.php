@@ -1,6 +1,7 @@
 <?php
     session_start();
     include '../config.php';
+    include '../lang/' . $website_language . '.php';
     $select_content = $database->query("SELECT * FROM " . $database_table);
 
     if(sha1($_SESSION["loggedIn"]) == true) {
@@ -23,21 +24,21 @@
     </head>
     <body>
         <div id="page" style="width: 800px;position:relative;">
-            <h2>Manage your cards</h2>
-            <p>Change the way your cards are showing.</p>
-            <a href="add.php"><button type="button" class="btn btn-success">Add a card</button></a>
-            <a href="make-c.php"><button type="button" class="btn btn-danger">Generate the table in your database</button></a>
-            <a href="logout.php"><button type="button" style="position:absolute;right:0;" class="btn btn-outline-danger">Log out</button></a><br>
+            <h2><?php echo $lang_manage_title; ?></h2>
+            <p><?php echo $lang_manage_description; ?></p>
+            <a href="add.php"><button type="button" class="btn btn-success"><?php echo $lang_manage_btn_add; ?></button></a>
+            <a href="make-c.php"><button type="button" class="btn btn-danger"><?php echo $lang_manage_btn_gen; ?></button></a>
+            <a href="logout.php"><button type="button" style="position:absolute;right:0;" class="btn btn-outline-danger"><?php echo $lang_manage_btn_logout; ?></button></a><br>
             <br>
             <table class="table table-hover">
                 <thead style="background-color:#888;color:#fff;">
                     <tr>
-                        <td scope="col">ID</td>
-                        <td scope="col">Title</td>
-                        <td scope="col">Description</td>
-                        <td scope="col">Link</td>
-                        <td scope="col">Button's name</td>
-                        <td scope="col">Actions</td>
+                        <td scope="col"><?php echo $lang_manage_table_id; ?></td>
+                        <td scope="col"><?php echo $lang_manage_table_title; ?></td>
+                        <td scope="col"><?php echo $lang_manage_table_description; ?></td>
+                        <td scope="col"><?php echo $lang_manage_table_link; ?></td>
+                        <td scope="col"><?php echo $lang_manage_table_btnname; ?></td>
+                        <td scope="col"><?php echo $lang_manage_table_actions; ?></td>
                     </tr>
                 </thead>
                 <?php while($selection = $select_content->fetch()) {?>
@@ -47,7 +48,7 @@
                     <td><?php echo $selection['description']; ?></td>
                     <td><?php echo $selection['link']; ?></td>
                     <td><?php echo $selection['btnname']; ?></td>
-                    <td><a href="edit.php?id=<?php echo $selection['id']; ?>">Edit</a><br><a href="delete-c.php?id=<?php echo $selection['id']; ?>">Delete</a></td>
+                    <td><a href="edit.php?id=<?php echo $selection['id']; ?>"><?php echo $lang_manage_action_edit; ?></a><br><a href="delete-c.php?id=<?php echo $selection['id']; ?>"><?php echo $lang_manage_action_delete; ?></a></td>
                 </tr>
                 <?php } ?>
             </table>

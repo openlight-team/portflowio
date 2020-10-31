@@ -5,6 +5,7 @@
     $website_theme = "default"; // Website's theme
     $website_icon = "assets/icon.png"; // Favicon location
     $website_color = "#0075ff"; // Main website color
+    $website_language = "en"; // Website language
 
     // Configuration for database
     $database_host = "localhost"; // Database's host

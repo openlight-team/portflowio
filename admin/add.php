@@ -1,6 +1,7 @@
 <?php
     session_start();
     include '../config.php';
+    include '../lang/' . $website_language . '.php';
 
     if ($_SESSION["loggedIn"] == true) {
         $login = 1;
@@ -34,16 +35,16 @@
                 </div>
             <?php } ?>
             <br>
-            <h2>Add a card to your website</h2>
-            <p>Adding more content, ya know.</p>
-            <a href="manage.php">Go back</a>
+            <h2><?php echo $lang_add_title; ?></h2>
+            <p><?php echo $lang_add_description; ?></p>
+            <a href="manage.php"><?php echo $lang_global_back; ?></a>
             <br><br>
             <form method="POST" action="">
-                <input class="form-control" name="title" type="text" placeholder="Card title">
-                <input class="form-control" name="description" type="text" placeholder="Card description">
-                <input class="form-control" name="link" type="text" placeholder="Card link (don't forget http://)">
-                <input class="form-control" name="btnname" type="text" placeholder="Button name">
-                <input name="validate" type="submit" value="Add" class="btn btn-primary">
+                <input class="form-control" name="title" type="text" placeholder="<?php echo $lang_add_input_title; ?>">
+                <input class="form-control" name="description" type="text" placeholder="<?php echo $lang_add_input_description; ?>">
+                <input class="form-control" name="link" type="text" placeholder="<?php echo $lang_add_input_link; ?>">
+                <input class="form-control" name="btnname" type="text" placeholder="<?php echo $lang_add_input_btnname; ?>">
+                <input name="validate" type="submit" value="<?php echo $lang_add_input_add; ?>" class="btn btn-primary">
             </form>
         </div>
     </body>

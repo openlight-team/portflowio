@@ -20,4 +20,6 @@
     $admin_password = "d033e22ae348aeb5660fc2140aec35850c4da997"; // sha1 hash for admin password (generate hash at http://www.sha1-online.com/) ("admin" is default)
 
     // Theme specific settings
+    // Default
+    $default_bootstrap_color = "primary"; // Bootstrap main color
 ?>

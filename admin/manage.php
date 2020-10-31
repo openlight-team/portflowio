@@ -22,12 +22,12 @@
         <link rel="stylesheet" href="panel.css">
     </head>
     <body>
-        <div id="page" style="width: 800px;">
+        <div id="page" style="width: 800px;position:relative;">
             <h2>Manage your cards</h2>
             <p>Change the way your cards are showing.</p>
-            <a href="add.php"><button type="button" class="btn btn-primary">Add a card</button></a>
-            <a href="make-c.php"><button type="button" class="btn btn-primary">Generate the table in your database</button></a>
-            <a href="logout.php"><button type="button" class="btn btn-primary">Log out</button></a><br>
+            <a href="add.php"><button type="button" class="btn btn-success">Add a card</button></a>
+            <a href="make-c.php"><button type="button" class="btn btn-danger">Generate the table in your database</button></a>
+            <a href="logout.php"><button type="button" style="position:absolute;right:0;" class="btn btn-outline-danger">Log out</button></a><br>
             <br>
             <table class="table table-hover">
                 <thead style="background-color:#888;color:#fff;">

@@ -53,7 +53,7 @@
             <?php } ?>
             <br>
             <h2><?php echo $lang_edit_title1; ?><?php echo $title; ?><?php echo $lang_edit_title2; ?></h2>
-            <p>Adding more content, ya know.</p>
+            <p><?php echo $lang_add_description; ?></p>
             <a href="manage.php"><?php echo $lang_global_back; ?></a>
             <br><br>
             <form method="POST" action="">

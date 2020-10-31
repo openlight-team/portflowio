@@ -9,11 +9,11 @@
                 header("Location: panel.php");
             }
             else {
-                $error = "Wrong password.";
+                $error = "Oups... Mauvais mot de passe.";
             }
         }
         else {
-            $error = "Unknown account.";
+            $error = "Compte inconnu.";
         }
     }
 ?>
@@ -23,7 +23,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Portflowio Admin Panel</title>
+        <title>Portflowio | Tableau de bord</title>
         <link rel="icon" href="../<?php echo $website_icon; ?>" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -63,19 +63,19 @@
             <img src="logo.png" style="height:30px;margin-bottom:30px;">
             <form method="POST">
                 <div class="form-group">
-                    <label for="input-email">E-mail address</label>
+                    <label for="input-email">Adresse email</label>
                     <input name="email" id="input-email" type="email" class="form-control" aria-describedby="emailHelp">
-                    <small id="emailHelp" class="form-text text-muted">Don't worry, it's between you and me.</small>
+                    <small id="emailHelp" class="form-text text-muted">Ne t'inquiète pas, c'est entre toi et moi.</small>
                 </div>
                 <div class="form-group">
-                    <label for="input-password">Password</label>
+                    <label for="input-password">Mot de passe</label>
                     <input name="password" id="input-password" type="password" class="form-control">
-                    <small id="mdpHelp" class="form-text text-muted">Hide your keyboard, someone's watching.</small>
+                    <small id="mdpHelp" class="form-text text-muted">Caches ton clavier, quelqu'un te regarde.</small>
                 </div>
                 <br>
-                <input name="submit" type="submit" value="Login" class="btn btn-primary">
+                <input name="submit" type="submit" value="Se connecter" class="btn btn-primary">
                 <small id="mdpError" class="form-text text-muted"><?php if(isset($error)){echo $error;} ?></small>
-                <small class="form-text text-muted">No account ? Make it in config.php!</small>
+                <small class="form-text text-muted">Pas de compte ? À créer dans config.php !</small>
             </form>
         </div>
 

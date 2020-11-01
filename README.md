@@ -1,12 +1,12 @@
 # portflowio
 An easier way to show your projects.
-***
-### How does it looks like ?
-It looks like this, in **default theme** :<br><br>
+    <hr>
+## How does it look like?
+The default theme looks like this :<br><br>
 ![default theme](https://i.imgur.com/Wvt767V.png)
-***
-### How to make it work?
-Follow these [easy steps](https://github.com/ecnivtwelve/portflowio/wiki/Installation) and see :)
-***
-### How to update
-Like [this](https://github.com/ecnivtwelve/portflowio/wiki/Update) ;)
+    <hr>
+## How to make it work?
+Check out the [project's Wiki](https://github.com/ecnivtwelve/portflowio/wiki/Installation)!
+    <hr>
+### How to update?
+See the [Wiki](https://github.com/ecnivtwelve/portflowio/wiki/Update).

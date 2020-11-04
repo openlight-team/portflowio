@@ -2,6 +2,7 @@
 
     session_start();
     include '../config.php';
+    require "../boot.php";
 
     if($_SESSION["loggedIn"] == true) {
         $login = 1;

@@ -2,6 +2,8 @@
     session_start();
     include '../config.php';
     include '../lang/' . $website_language . '.php';
+    require "../boot.php";
+
     $select_content = $database->query("SELECT * FROM " . $database_table);
 
     if(sha1($_SESSION["loggedIn"]) == true) {

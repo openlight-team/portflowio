@@ -3,6 +3,28 @@
     //Global
     $lang_global_back = "Go back";
 
+    //install.php
+    $lang_website_language = "Language";
+
+    $lang_db_host = "Database host";
+    $lang_db_name = "Database name";
+    $lang_db_user = "Database username";
+    $lang_db_password = "Database password";
+    $lang_db_table = "Database table";
+
+    $lang_website_name = "Website name";
+    $lang_website_desc = "Website description";
+    $lang_website_theme = "Website theme";
+    $lang_website_icon = "Icon";
+    $lang_website_color = "Primary color";
+    $lang_credentials_hint = "You'll use these to log into your Portflowio to manage it.";
+    $lang_admin_email = "Admin e-mail address";
+    $lang_admin_password= "Admin password";
+
+    $lang_next_step = "Next step";
+    $lang_already_installed = "Portflowio is already installed. To reinstall, delete the config.php file.";
+    $lang_install_successful = "Portflowio was successfully installed! Please log in to add content.";
+
     //login.php
     $lang_login_wrong1 = "Wrong password.";
     $lang_login_wrong2 = "Unknown username.";
@@ -10,7 +32,6 @@
     $lang_login_form_pass = "Password";
     $lang_login_form_tip1 = "Don't worry, it's between you and me.";
     $lang_login_form_tip2 = "Hide your keyboard, someone's watching.";
-    $lang_login_form_tip3 = "No account ? Make it in config.php.";
     $lang_login_form_validate = "Login";
 
     //manage.php
@@ -46,5 +67,3 @@
     $lang_make_text = "If the table already exists, all the content will be overwritten.";
     $lang_del_back = "Go back to Manage";
     $lang_make_btn = "Go ahead.";
-
-?>

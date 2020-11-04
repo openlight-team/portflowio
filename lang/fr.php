@@ -3,28 +3,6 @@
     //Global
     $lang_global_back = "Retour";
 
-    //install.php
-    $lang_website_language = "Langue";
-
-    $lang_db_host = "Adresse de la base de données";
-    $lang_db_name = "Nom de la base de données";
-    $lang_db_user = "Nom d'utilisateur de la base de données";
-    $lang_db_password = "Mot de passe de la base de données";
-    $lang_db_table = "Tableau de la base de données";
-
-    $lang_website_name = "Nom du site";
-    $lang_website_desc = "Description du site";
-    $lang_website_theme = "Thème du site";
-    $lang_website_icon = "Îcone du site";
-    $lang_website_color = "Couleur principale";
-    $lang_credentials_hint = "Vous utiliserez ces identifiants pour vous connecter à votre Portflowio afin de le gérer";
-    $lang_admin_email = "Adresse e-mail de l'admin";
-    $lang_admin_password= "Mot de passe de l'admin";
-
-    $lang_next_step = "Prochaine étape";
-    $lang_already_installed = "Portflowio est déjà installé. Pour réinstaller, supprimez config.php";
-    $lang_install_successful = "Portflowio a été installé avec succès! Connectez vous pour ajouter du contenu.";
-
     //login.php
     $lang_login_wrong1 = "Oups... Mauvais mot de passe !";
     $lang_login_wrong2 = "Nom d'utlisateur inconnu...";
@@ -32,6 +10,7 @@
     $lang_login_form_pass = "Mot de passe";
     $lang_login_form_tip1 = "Ne t'inquiète pas, c'est entre toi et moi.";
     $lang_login_form_tip2 = "Caches ton clavier ! Quelqu'un regarde...";
+    $lang_login_form_tip3 = "Pas de compte ? Crées-le dans config.php.";
     $lang_login_form_validate = "Se connecter";
 
     //manage.php

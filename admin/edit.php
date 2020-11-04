@@ -2,7 +2,6 @@
     session_start();
     include '../config.php';
     include '../lang/' . $website_language . '.php';
-    require "../boot.php";
 
     if ($_SESSION["loggedIn"] == true) {
         $login = 1;

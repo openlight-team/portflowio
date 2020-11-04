@@ -62,11 +62,6 @@
         <!-- Login form -->
         <div id="login">
             <img src="logo.png" style="height:30px;margin-bottom:30px;">
-            <?php
-                if (isset($_GET["message"]) && $_GET["message"] == "installed") {
-                    echo "<p>$lang_install_successful</p>";
-                }
-            ?>
             <form method="POST">
                 <div class="form-group">
                     <label for="input-email"><?php echo $lang_login_form_mail; ?></label>
@@ -81,6 +76,7 @@
                 <br>
                 <input name="submit" type="submit" value="<?php echo $lang_login_form_validate; ?>" class="btn btn-primary">
                 <small id="mdpError" class="form-text text-muted"><?php if(isset($error)){echo $error;} ?></small>
+                <small class="form-text text-muted"><?php echo $lang_login_form_tip3; ?></small>
             </form>
         </div>
 

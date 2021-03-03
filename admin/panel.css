@@ -16,3 +16,15 @@ form input {
     width: 600px;
     margin-bottom: 15px;
 }
+
+/* for dark theme users */
+@media (prefers-color-scheme: dark) {
+    .table {
+        color: #ffffff !important;
+    }
+
+    body {
+        background-color: #222;
+        color: white !important;
+    }
+}

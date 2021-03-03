@@ -29,7 +29,6 @@
             <h2><?php echo $lang_manage_title; ?></h2>
             <p><?php echo $lang_manage_description; ?></p>
             <a href="add.php"><button type="button" class="btn btn-success"><?php echo $lang_manage_btn_add; ?></button></a>
-            <a href="make-c.php"><button type="button" class="btn btn-danger"><?php echo $lang_manage_btn_gen; ?></button></a>
             <a href="logout.php"><button type="button" style="position:absolute;right:0;" class="btn btn-outline-danger"><?php echo $lang_manage_btn_logout; ?></button></a><br>
             <br>
             <table class="table table-hover">

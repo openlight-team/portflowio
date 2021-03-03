@@ -27,4 +27,10 @@ form input {
         background-color: #222;
         color: white !important;
     }
+    
+    .form-control {
+        background-color: #333;
+        color: white;
+        border: 1px solid #555;
+    }
 }

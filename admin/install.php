@@ -225,6 +225,7 @@ function process_step4()
     write_config_value($config_file, "website_theme", $_POST["website_theme"]);
     // write_config_value($config_file, "website_icon", $_POST["website_icon"]);
     write_config_value($config_file, "website_color", $_POST["website_color"]);
+    write_config_value($config_file, "default_bootstrap_color", "primary");
     write_config_value($config_file, "installed", "true");
 
     fclose($config_file);
